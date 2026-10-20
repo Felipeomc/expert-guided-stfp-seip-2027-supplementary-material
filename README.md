@@ -2,7 +2,7 @@
 
 **Expert-Guided Software Team Formation in Practice: An Optimization Tool, Practitioner Validation, and Lessons Learned**
 
-This repository contains the reproducibility workbooks and the supplementary-material PDF for the paper. It preserves the project-level experimental evidence underlying every reported result (GA calibration, surrogate fidelity, the exact MILP reference, the historical backtest, the algorithmic and direct-LLM baselines, and the blinded practitioner validation) without altering, rounding, or recalculating any experimental value. No sensitive or personally identifiable information is included beyond what was already present, anonymized, in the source organizational data; developer identifiers (e.g. `Dev370`) and project names are preserved as anonymized/pseudonymized source identifiers, not real names.
+This repository contains evidence workbooks and the supplementary-material PDF for the paper. It supports inspection and numerical recalculation of the released results, but not full execution-level reproduction from raw organizational inputs or LLM sessions. Raw experimental records are preserved, while summary statistics are independently recomputed and may be displayed with stated rounding. No sensitive or personally identifiable information is included beyond what was already present, anonymized, in the source organizational data; developer identifiers (e.g. `Dev370`) and project names are preserved as anonymized/pseudonymized source identifiers, not real names.
 
 ## 1. Package Structure
 
