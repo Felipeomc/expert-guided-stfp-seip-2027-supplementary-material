@@ -24,7 +24,7 @@ expert-guided-stfp-seip-2027-supplementary-material/
 |                                                  and GA_uniform under the refined evaluator
 |-- 06_RQ4_Direct_LLM_vs_Calibrated_GA.xlsx       RQ4: calibrated GA vs. the selected direct,
 |                                                  leakage-controlled zero-shot LLM response
-|-- 07_RQ5_Practitioner_Validation.xlsx           RQ5: blinded pairwise comparisons (vs. historical
+|-- 07_RQ5_Practitioner_Validation_.xlsx           RQ5: blinded pairwise comparisons (vs. historical
 |                                                  and vs. GA_uniform) and isolated team acceptability
 |-- 08_RQ5_TeamPlus_Followup.xlsx                 RQ5: formative hands-on TeamPlus follow-up case
 |                                                  (one seeded six-person recommendation)
