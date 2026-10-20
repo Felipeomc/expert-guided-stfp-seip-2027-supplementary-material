@@ -20,8 +20,8 @@ expert-guided-stfp-seip-2027-supplementary-material/
 |                                                  12 controlled size-four benchmark projects
 |-- 04_RQ3_Historical_Backtest_2025.xlsx          RQ3: calibrated GA vs. the organization's real
 |                                                  historical teams, 16 held-out 2025 projects
-|-- 05_RQ4_Algorithmic_Baselines.xlsx             RQ4: calibrated GA vs. Greedy, Random,
-|                                                  Random-Search, and GA_uniform
+|-- 05_RQ4_Algorithmic_Baselines.xlsx             RQ4: calibrated/refined GA vs. Greedy, Random,
+|                                                  and GA_uniform under the refined evaluator
 |-- 06_RQ4_Direct_LLM_vs_Calibrated_GA.xlsx       RQ4: calibrated GA vs. the selected direct,
 |                                                  leakage-controlled zero-shot LLM response
 |-- 07_RQ5_Practitioner_Validation.xlsx           RQ5: blinded pairwise comparisons (vs. historical
@@ -66,11 +66,11 @@ Calibrated GA vs. the organization's real historical teams on the 16 temporally 
 **Key result:** the GA's best-of-30 recommendation outscored the historical team in all 16 projects; mean relative gain 35.15% (median 34.27%); mean AE gain 0.1466.
 
 ### 05 — RQ4: Algorithmic Baselines
-Calibrated GA vs. four algorithmic baselines (Greedy, Random, Random-Search, GA_uniform) on the same 16 held-out 2025 projects and the same surrogate evaluator.
-**Key result:** the GA outscored Greedy, Random, and Random-Search on all 16 projects; against GA_uniform (the key ablation), 9 wins / 6 ties / 1 loss (mean AE 0.6194 vs. 0.6152).
+The calibrated/refined GA is compared with Greedy, Random, and GA_uniform on the same 16 held-out 2025 projects. GA_uniform uses an equal-weight simple-mean search objective. Its representative team is selected by maximum `fitness_uniform` across 30 seeds per project, with the lowest seed breaking exact ties, and is then evaluated with the final refined evaluator. Random-Search is excluded from this post-refinement comparison because its refined execution was incomplete; the earlier experiment remains separate.
+**Key result:** under the common refined evaluator, the calibrated/refined GA achieved a mean AE of 0.5905 versus 0.5675 for GA_uniform, with 14 wins, 2 ties, and 0 losses. It also outscored Random and Greedy on all 16 projects.
 
 ### 06 — RQ4: Direct LLM vs. Calibrated GA
-Calibrated GA vs. the selected response from a leakage-controlled, zero-shot direct-LLM baseline (ChatGPT, "GPT-5.6 Sol High"), on the same 16 held-out 2025 projects.
+Calibrated GA vs. the selected response from a leakage-controlled, zero-shot direct-LLM baseline using ChatGPT's web interface (recorded interface model label `GPT-5.6 Sol`; reasoning mode set to `High`), on the same 16 held-out 2025 projects.
 **Key result:** the GA best-of-30 outscored the selected LLM response on all 16 projects; mean AE gap 0.1241 (95% CI [0.0802, 0.1680]); mean relative gain 25.03%.
 
 ### 07 — RQ5: Blinded Practitioner Validation
