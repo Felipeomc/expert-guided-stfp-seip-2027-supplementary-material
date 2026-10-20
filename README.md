@@ -1,6 +1,6 @@
 # Supplementary Material
 
-**Interpretable by Design, Efficient by Distillation: An Industrial Study of Expert-Guided Search-Based Software Team Formation**
+**Expert-Guided Software Team Formation in Practice: An Optimization Tool, Practitioner Validation, and Lessons Learned**
 
 This repository contains the reproducibility workbooks and the supplementary-material PDF for the paper. It preserves the project-level experimental evidence underlying every reported result (GA calibration, surrogate fidelity, the exact MILP reference, the historical backtest, the algorithmic and direct-LLM baselines, and the blinded practitioner validation) without altering, rounding, or recalculating any experimental value. No sensitive or personally identifiable information is included beyond what was already present, anonymized, in the source organizational data; developer identifiers (e.g. `Dev370`) and project names are preserved as anonymized/pseudonymized source identifiers, not real names.
 
@@ -9,9 +9,9 @@ This repository contains the reproducibility workbooks and the supplementary-mat
 ```
 expert-guided-stfp-seip-2027-supplementary-material/
 |-- README.md                                    This file
-|-- Supplementary_Material__SEIP_Felipe_.pdf      Supplementary tables S1-S4 (dataset summary,
-|                                                  retained RQ5 design, and the full RQ2/RQ3
-|                                                  project-level tables), as cited in the paper
+|-- Supplementary_Material__SEIP_Felipe_.pdf      Supplementary tables S1-S13 covering the dataset,
+|                                                  RQ2-RQ5 evidence, V2 algorithmic baselines,
+|                                                  runtime provenance, and practitioner validation
 |-- 01_GA_Calibration_Adaptive_Racing.xlsx        GA configuration selected by the adaptive-racing
 |                                                  procedure (Section IV-C / "Search: A Calibrated GA")
 |-- 02_RQ1_Surrogate_Fidelity.xlsx                RQ1: fidelity of the closed-form surrogate to
